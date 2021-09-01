@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "name": "film_actor weekly",
+        "cols": 3,
+        "rows": 5462,
+        "type": "POSTGRE",
+        "lastUpdate": "2021/09/01 07:00 UTC"
+    },
+    {
+        "id": 2,
+        "name": "film_actor weekly 2",
+        "type": "POSTGRE"
+    }
+]
