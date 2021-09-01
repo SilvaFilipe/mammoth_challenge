@@ -22,26 +22,23 @@
 
     <v-main class="grey lighten-3">
       <v-container>
-        <v-row>
-          <v-col cols="1">
-            <div>
-              Add
-            </div>
-          </v-col>
-
-          <v-col>
-            <v-sheet min-height="70vh" rounded="lg"> </v-sheet>
-          </v-col>
-        </v-row>
+        <files />
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import Files from "@/components/Files";
+
 export default {
+  components: { Files },
   data: () => ({
     links: ["Dashboard", "Messages"],
   }),
 };
 </script>
+
+<style>
+@import "./css/app.css";
+</style>
