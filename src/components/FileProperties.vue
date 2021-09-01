@@ -57,9 +57,20 @@
               class="pa-0 mt-0 ml-2"
               hide-details
             />
-            <v-icon x-small color="grey" class="mr-2">
-              mdi-information-outline
-            </v-icon>
+            <v-tooltip top>
+              <template v-slot:activator="{ on, attrs }">
+                <v-icon
+                  x-small
+                  color="grey"
+                  class="mr-2"
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  mdi-information-outline
+                </v-icon>
+              </template>
+              <span>Tooltip</span>
+            </v-tooltip>
             <v-spacer />
             <span
               v-if="file.dataRetrievalSchedule"
@@ -115,9 +126,20 @@
               class="pa-0 mt-0 ml-2"
               hide-details
             />
-            <v-icon x-small color="grey" class="mr-2">
-              mdi-information-outline
-            </v-icon>
+            <v-tooltip top>
+              <template v-slot:activator="{ on, attrs }">
+                <v-icon
+                  x-small
+                  color="grey"
+                  class="mr-2"
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  mdi-information-outline
+                </v-icon>
+              </template>
+              <span>Tooltip</span>
+            </v-tooltip>
           </div>
         </div>
       </v-expansion-panel-content>
