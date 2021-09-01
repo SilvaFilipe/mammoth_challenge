@@ -2,7 +2,9 @@
   <v-row>
     <v-col cols="1">
       <div>
-        Add
+        <v-btn class="mt-5" fab small depressed color="primary">
+          <v-icon> mdi-plus </v-icon>
+        </v-btn>
       </div>
     </v-col>
     <v-col>
