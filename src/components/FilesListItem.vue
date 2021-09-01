@@ -10,18 +10,18 @@
         :src="FILE_TYPES_ICONS[file.type]"
       />
     </v-col>
-    <v-col cols="7">
+    <v-col cols="4">
       {{ file.name }}
     </v-col>
-    <v-col cols="2">
+    <v-col cols="3">
       <span v-if="file.cols && file.rows"
         >{{ file.cols | ThousandsSeparators }} |
         {{ file.rows | ThousandsSeparators }}
       </span>
       <span v-else class="text--disabled">Empty dataset</span>
     </v-col>
-    <v-col cols="2">
-      <span v-if="file.lastUpdate">{{ file.lastUpdate | TimeAgo }}</span>
+    <v-col cols="4">
+      <span v-if="file.updatedAt">{{ file.updatedAt | TimeAgo }}</span>
     </v-col>
   </v-row>
 </template>

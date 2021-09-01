@@ -12,9 +12,6 @@
         <v-col>
           <files-list :files="files" />
         </v-col>
-        <!--  <v-col>
-          <files-list />
-        </v-col>-->
       </v-row>
     </v-col>
   </v-row>

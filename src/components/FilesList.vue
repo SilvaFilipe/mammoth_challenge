@@ -3,13 +3,13 @@
     <v-col>
       <v-row class="blue lighten-3 mb-2">
         <v-col cols="1" />
-        <v-col cols="7">
+        <v-col cols="4">
           File name
         </v-col>
-        <v-col cols="2">
+        <v-col cols="3">
           Cols | Rows
         </v-col>
-        <v-col cols="2">
+        <v-col cols="4">
           Last modified
           <v-icon
             x-small
@@ -23,20 +23,28 @@
       <div
         v-for="file in orderedFiles"
         :key="file.id"
-        @click="selectedFileId = file.id"
+        @click="selectedFile = file"
       >
         <files-list-item
           :file="file"
-          :is-selected="selectedFileId == file.id"
+          :is-selected="selectedFile && selectedFile.id == file.id"
           class="my-1 cursor-pointer"
         />
       </div>
+    </v-col>
+    <v-col v-if="selectedFile">
+      <file-details
+        class="mt-10"
+        :file="selectedFile"
+        @close="selectedFile = null"
+      />
     </v-col>
   </v-row>
 </template>
 
 <script>
 import FilesListItem from "@/components/FilesListItem";
+import FileDetails from "@/components/FileDetails";
 
 export default {
   props: {
@@ -45,19 +53,19 @@ export default {
       default: () => [],
     },
   },
-  components: { FilesListItem },
+  components: { FilesListItem, FileDetails },
   data: () => ({
-    selectedFileId: null,
+    selectedFile: null,
     ascendingOrder: true,
   }),
   computed: {
     orderedFiles() {
       if (this.ascendingOrder)
         return this.files.sort((a, b) =>
-          new Date(b.lastUpdate) < new Date(a.lastUpdate) ? 1 : -1
+          new Date(b.updatedAt) < new Date(a.updatedAt) ? 1 : -1
         );
       return this.files.sort((a, b) =>
-        new Date(b.lastUpdate) > new Date(a.lastUpdate) ? 1 : -1
+        new Date(b.updatedAt) > new Date(a.updatedAt) ? 1 : -1
       );
     },
   },
