@@ -11,8 +11,12 @@
         </v-col>
         <v-col cols="3">
           <span class="font-weight-medium">Last modified</span>
-          <v-icon small color="grey" @click="ascendingOrder = !ascendingOrder">
-            {{ ascendingOrder ? "mdi-menu-up" : "mdi-menu-down" }}
+          <v-icon
+            small
+            color="grey"
+            @click="descendingOrder = !descendingOrder"
+          >
+            {{ descendingOrder ? "mdi-menu-down" : "mdi-menu-up" }}
           </v-icon>
         </v-col>
       </v-row>
@@ -52,11 +56,11 @@ export default {
   components: { FilesListItem, FileDetails },
   data: () => ({
     selectedFile: null,
-    ascendingOrder: true,
+    descendingOrder: true,
   }),
   computed: {
     orderedFiles() {
-      if (this.ascendingOrder)
+      if (this.descendingOrder)
         return this.files.sort((a, b) =>
           new Date(b.updatedAt) < new Date(a.updatedAt) ? 1 : -1
         );
