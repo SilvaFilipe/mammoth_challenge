@@ -3,13 +3,23 @@
     <v-app-bar app color="grey lighten-3" flat>
       <v-img max-height="20" max-width="20" src="./assets/mammoth_logo.png" />
       <div class="ml-3">
-        <span>Data Library > </span>
-        <span class="primary--text">Postgre</span>
+        <span class="font-weight-medium subtitle-2">
+          Data Library >
+          <span class="primary--text subtitle-2">Postgre</span>
+        </span>
       </div>
 
       <v-spacer />
-      <v-btn depressed tile color="secondary" style="text-transform: none;">
-        Payment due! Fix now!
+      <v-btn
+        x-small
+        depressed
+        color="secondary"
+        class="rounded-sm"
+        style="text-transform: none;"
+      >
+        <span class="font-weight-regular">
+          Payment due! Fix now!
+        </span>
       </v-btn>
       <v-icon color="primary" class="ml-2">
         mdi-flash-outline

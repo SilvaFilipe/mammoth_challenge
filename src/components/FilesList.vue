@@ -1,16 +1,16 @@
 <template>
   <v-row>
     <v-col>
-      <v-row class="blue lighten-3 mb-2">
+      <v-row class="mb-1">
         <v-col cols="1" />
-        <v-col cols="4">
-          File name
+        <v-col cols="5">
+          <span class="font-weight-medium">File name</span>
         </v-col>
         <v-col cols="3">
-          Cols | Rows
+          <span class="font-weight-medium">Cols | Rows</span>
         </v-col>
-        <v-col cols="4">
-          Last modified
+        <v-col cols="3">
+          <span class="font-weight-medium">Last modified</span>
           <v-icon
             x-small
             color="grey"

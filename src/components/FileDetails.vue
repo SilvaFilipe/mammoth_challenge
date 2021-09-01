@@ -2,7 +2,7 @@
   <div>
     <div class="white py-3 px-5">
       <div class="d-flex">
-        <span>
+        <span class="subtitle-2">
           {{ file.name }}
         </span>
         <v-spacer />
@@ -12,12 +12,12 @@
       </div>
 
       <div v-if="file.updatedAt">
-        <span>Last update: </span>
+        <span class="font-weight-medium">Last update: </span>
         <span>{{ file.updatedAt | TimeAgo }}</span>
       </div>
 
       <div class="mt-3 d-flex">
-        <v-btn depressed tile width="100" color="primary">
+        <v-btn depressed small width="80" class="rounded-sm" color="primary">
           Open
         </v-btn>
         <v-icon small color="grey" class="ml-2">

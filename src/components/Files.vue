@@ -1,8 +1,8 @@
 <template>
   <v-row>
-    <v-col cols="1">
+    <v-col cols="1" class="d-flex justify-center">
       <div>
-        <v-btn class="mt-5" fab small depressed color="primary">
+        <v-btn class="mt-7" fab small depressed color="primary">
           <v-icon> mdi-plus </v-icon>
         </v-btn>
       </div>
