@@ -15,7 +15,7 @@
         depressed
         color="secondary"
         class="rounded-sm"
-        style="text-transform: none;"
+        style="text-transform:none"
       >
         <span class="font-weight-regular">
           Payment due! Fix now!

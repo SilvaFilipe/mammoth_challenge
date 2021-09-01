@@ -1,7 +1,7 @@
 <template>
   <v-expansion-panels>
     <v-expansion-panel>
-      <v-expansion-panel-header class="py-1" style="min-height: 35px">
+      <v-expansion-panel-header class="py-1" style="min-height:35px">
         <span class="font-weight-bold">Properties</span>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
