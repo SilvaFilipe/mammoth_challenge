@@ -11,12 +11,8 @@
         </v-col>
         <v-col cols="3">
           <span class="font-weight-medium">Last modified</span>
-          <v-icon
-            x-small
-            color="grey"
-            @click="ascendingOrder = !ascendingOrder"
-          >
-            {{ ascendingOrder ? "mdi-arrow-up" : "mdi-arrow-down" }}
+          <v-icon small color="grey" @click="ascendingOrder = !ascendingOrder">
+            {{ ascendingOrder ? "mdi-menu-up" : "mdi-menu-down" }}
           </v-icon>
         </v-col>
       </v-row>
