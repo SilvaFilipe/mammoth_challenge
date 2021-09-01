@@ -54,7 +54,7 @@
               hide-details
             />
             <v-icon x-small color="grey" class="mr-2">
-              mdi-information
+              mdi-information-outline
             </v-icon>
             <v-spacer />
             <span
@@ -111,7 +111,7 @@
               hide-details
             />
             <v-icon x-small color="grey" class="mr-2">
-              mdi-information
+              mdi-information-outline
             </v-icon>
           </div>
         </div>

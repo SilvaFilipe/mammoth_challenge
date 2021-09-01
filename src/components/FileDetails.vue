@@ -25,7 +25,7 @@
         </v-icon>
         <v-spacer />
         <v-icon small color="grey" class="mr-2">
-          mdi-delete
+          mdi-delete-outline
         </v-icon>
       </div>
     </div>
