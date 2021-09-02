@@ -7,3 +7,12 @@ span,
 p {
   font-size: 11px;
 }
+
+.v-input--switch__thumb.theme--light.primary--text {
+  color: white !important;
+}
+
+.v-input--switch__track {
+  color: var(--v-primary-base);
+  opacity: 1;
+}
