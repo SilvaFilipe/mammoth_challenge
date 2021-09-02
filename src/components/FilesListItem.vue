@@ -14,18 +14,18 @@
       <span class="font-weight-medium">{{ file.name }}</span>
     </v-col>
     <v-col cols="3">
-      <span v-if="file.cols && file.rows" class="font-weight-medium"
-        >{{ file.cols | ThousandsSeparators }} |
+      <span v-if="file.cols && file.rows" class="font-weight-medium">
+        {{ file.cols | ThousandsSeparators }} |
         {{ file.rows | ThousandsSeparators }}
       </span>
-      <span v-else class="text--disabled font-weight-medium"
-        >Empty dataset</span
-      >
+      <span v-else class="text--disabled font-weight-medium">
+        Empty dataset
+      </span>
     </v-col>
     <v-col cols="3">
-      <span class="font-weight-medium" v-if="file.updatedAt">{{
-        file.updatedAt | TimeAgo
-      }}</span>
+      <span class="font-weight-medium" v-if="file.updatedAt">
+        {{ file.updatedAt | TimeAgo }}
+      </span>
     </v-col>
   </v-row>
 </template>

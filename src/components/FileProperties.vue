@@ -24,7 +24,7 @@
             <span class="font-weight-medium">Rows: </span>
             <span>{{ file.rows | ThousandsSeparators }} </span>
             <span class="font-weight-medium">Columns: </span>
-            <span>{{ file.cols | ThousandsSeparators }} </span>
+            <span>{{ file.cols | ThousandsSeparators }}</span>
           </div>
           <div>
             <span class="font-weight-medium">Size: </span>
@@ -79,11 +79,7 @@
               Edit schedule
             </span>
           </div>
-          <div
-            v-if="
-              file.isDataRetrievalScheduleActive && file.dataRetrievalSchedule
-            "
-          >
+          <div v-if="showDataRetrievalScheduleProperties">
             <div class="d-flex">
               <v-spacer />
               <span class="text-decoration-underline primary--text">
@@ -170,6 +166,14 @@ export default {
   filters: {
     ThousandsSeparators,
     PrettyDate,
+  },
+  computed: {
+    showDataRetrievalScheduleProperties() {
+      return (
+        this.file.isDataRetrievalScheduleActive &&
+        this.file.dataRetrievalSchedule
+      );
+    },
   },
 };
 </script>

@@ -2,9 +2,7 @@
   <div>
     <div class="white py-3 px-5">
       <div class="d-flex">
-        <span class="subtitle-2">
-          {{ file.name }}
-        </span>
+        <span class="subtitle-2"> {{ file.name }} </span>
         <v-spacer />
         <v-icon @click="$emit('close')" x-small color="grey">
           mdi-close
@@ -47,8 +45,6 @@ export default {
     },
   },
   components: { FileProperties },
-  filters: {
-    TimeAgo,
-  },
+  filters: { TimeAgo },
 };
 </script>
