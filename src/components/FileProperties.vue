@@ -4,7 +4,7 @@
       <v-expansion-panel-header class="py-1" style="min-height:35px">
         <span class="font-weight-bold">Properties</span>
       </v-expansion-panel-header>
-      <v-expansion-panel-content>
+      <v-expansion-panel-content class="properties-content">
         <div>
           <div>
             <span class="font-weight-medium">Name: </span>
@@ -180,9 +180,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .query-metrics {
   height: 100px;
+  overflow: auto;
+}
+
+.properties-content {
+  max-height: calc(100vh - 300px);
   overflow: auto;
 }
 </style>
