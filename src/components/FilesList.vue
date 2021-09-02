@@ -1,18 +1,17 @@
 <template>
   <v-row>
-    <v-col>
+    <v-col cols="12" md="">
       <v-row class="mb-1">
-        <v-col cols="1" />
-        <v-col cols="5">
+        <v-col cols="5" offset="1">
           <span class="font-weight-medium">File name</span>
         </v-col>
         <v-col cols="3">
           <span class="font-weight-medium">Cols | Rows</span>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="3" class="d-flex align-center">
           <div
             @click="descendingOrder = !descendingOrder"
-            class="cursor-pointer"
+            class="cursor-pointer d-flex"
             style="width:fit-content"
           >
             <span class="font-weight-medium">Last modified</span>

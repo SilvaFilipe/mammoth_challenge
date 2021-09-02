@@ -17,9 +17,10 @@
         class="rounded-sm"
         style="text-transform:none"
       >
-        <span class="font-weight-regular">
+        <span class="font-weight-regular hidden-sm-and-down">
           Payment due! Fix now!
         </span>
+        <span class="font-weight-regular  hidden-md-and-up">!</span>
       </v-btn>
       <v-icon color="primary" class="ml-2">
         mdi-flash-outline
