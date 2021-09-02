@@ -157,6 +157,7 @@ import PrettyDate from "@/filters/PrettyDate";
 import { SCHEDULE_TYPES } from "@/constants/scheduleTypes";
 
 export default {
+  name: "FileProperties",
   props: {
     file: {
       type: Object,

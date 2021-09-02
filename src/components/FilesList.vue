@@ -48,6 +48,7 @@ import FilesListItem from "@/components/FilesListItem";
 import FileDetails from "@/components/FileDetails";
 
 export default {
+  name: "FilesList",
   props: {
     files: {
       type: Array,

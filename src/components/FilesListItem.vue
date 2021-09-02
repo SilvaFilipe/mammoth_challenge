@@ -36,6 +36,7 @@ import ThousandsSeparators from "@/filters/ThousandsSeparators";
 import TimeAgo from "@/filters/TimeAgo";
 
 export default {
+  name: "FilesListItem",
   props: {
     file: {
       type: Object,

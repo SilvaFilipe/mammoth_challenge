@@ -22,6 +22,7 @@ import FilesList from "@/components/FilesList";
 import exampleFiles from "@/example-data/files";
 
 export default {
+  name: "Files",
   components: { FilesList },
   data: () => ({
     files: exampleFiles,

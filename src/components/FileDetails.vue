@@ -39,6 +39,7 @@ import FileProperties from "@/components/FileProperties";
 import TimeAgo from "@/filters/TimeAgo";
 
 export default {
+  name: "FileDetails",
   props: {
     file: {
       type: Object,
