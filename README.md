@@ -4,7 +4,7 @@
 
 ### Desktop
 
-![Desktop](https://s9.gifyu.com/images/mammoth_1.png)
+![Desktop](https://s9.gifyu.com/images/mammoth_1cb9a122eb5976a5e.png)
 
 ### Mobile
 
