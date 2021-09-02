@@ -16,3 +16,7 @@ p {
   color: var(--v-primary-base);
   opacity: 1;
 }
+
+.v-expansion-panel:before {
+  box-shadow: none;
+}
