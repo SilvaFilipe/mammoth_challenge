@@ -148,8 +148,10 @@
 </template>
 
 <script>
+//Filters
 import ThousandsSeparators from "@/filters/ThousandsSeparators";
 import PrettyDate from "@/filters/PrettyDate";
+//Constants
 import { SCHEDULE_TYPES } from "@/constants/scheduleTypes";
 
 export default {

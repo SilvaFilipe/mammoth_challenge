@@ -31,9 +31,11 @@
 </template>
 
 <script>
-import { FILE_TYPES_ICONS } from "@/constants/fileTypes";
+//Filters
 import ThousandsSeparators from "@/filters/ThousandsSeparators";
 import TimeAgo from "@/filters/TimeAgo";
+//Constants
+import { FILE_TYPES_ICONS } from "@/constants/fileTypes";
 
 export default {
   name: "FilesListItem",

@@ -12,7 +12,9 @@
 </template>
 
 <script>
+//Components
 import FilesList from "@/components/FilesList";
+//Data
 import exampleFiles from "@/example-data/files";
 
 export default {

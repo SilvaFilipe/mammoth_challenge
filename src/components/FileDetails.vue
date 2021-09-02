@@ -33,7 +33,9 @@
 </template>
 
 <script>
+//Components
 import FileProperties from "@/components/FileProperties";
+//Filters
 import TimeAgo from "@/filters/TimeAgo";
 
 export default {
