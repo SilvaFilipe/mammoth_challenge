@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="12" md="">
+    <v-col cols="12" md="" class="pb-0">
       <v-row class="mb-1">
         <v-col cols="5" offset="1">
           <span class="font-weight-medium">File name</span>
@@ -33,9 +33,9 @@
         />
       </div>
     </v-col>
-    <v-col v-if="selectedFile">
+    <v-col v-if="selectedFile" class="pt-0 pt-md-3">
       <file-details
-        class="mt-10"
+        class="mt-2 mt-md-10"
         :file="selectedFile"
         @close="selectedFile = null"
       />
