@@ -10,14 +10,16 @@
           <span class="font-weight-medium">Cols | Rows</span>
         </v-col>
         <v-col cols="3">
-          <span class="font-weight-medium">Last modified</span>
-          <v-icon
-            small
-            color="grey"
+          <div
             @click="descendingOrder = !descendingOrder"
+            class="cursor-pointer"
+            style="width:fit-content"
           >
-            {{ descendingOrder ? "mdi-menu-down" : "mdi-menu-up" }}
-          </v-icon>
+            <span class="font-weight-medium">Last modified</span>
+            <v-icon small color="grey">
+              {{ descendingOrder ? "mdi-menu-down" : "mdi-menu-up" }}
+            </v-icon>
+          </div>
         </v-col>
       </v-row>
       <div
