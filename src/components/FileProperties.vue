@@ -53,7 +53,7 @@
               Data Retrieval Schedule
             </span>
             <v-switch
-              v-model="file.dataRetrievalSchedule"
+              v-model="file.isDataRetrievalScheduleActive"
               class="pa-0 mt-0 ml-2"
               hide-details
             />
@@ -73,13 +73,17 @@
             </v-tooltip>
             <v-spacer />
             <span
-              v-if="file.dataRetrievalSchedule"
+              v-if="file.isDataRetrievalScheduleActive"
               class="text-decoration-underline"
             >
               Edit schedule
             </span>
           </div>
-          <div v-if="file.dataRetrievalSchedule">
+          <div
+            v-if="
+              file.isDataRetrievalScheduleActive && file.dataRetrievalSchedule
+            "
+          >
             <div class="d-flex">
               <v-spacer />
               <span class="text-decoration-underline primary--text">
