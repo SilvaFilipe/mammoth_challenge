@@ -5,16 +5,16 @@
         "cols": 3,
         "rows": 5462,
         "type": "POSTGRE",
-        "updatedAt": "2021/09/01 07:00 UTC",
-        "createdAt": "2019/05/22 07:00 UTC",
+        "updatedAt": "2021/09/01 07:05 UTC",
+        "createdAt": "2019/05/22 07:05 UTC",
         "size": 564,
         "queryMetrics": ["SELECT * FROM \"customer\""],
         "isDataRetrievalScheduleActive": true,
         "dataRetrievalSchedule": {
             "type": "EVERY_WEEK_MONDAY",
-            "range": "2022/04/25 07:00 UTC",
-            "lastDatapull": "2018/04/25 07:00 UTC",
-            "nextDatapull": "2022/01/12 07:00 UTC"
+            "range": "2022/04/25 23:30 UTC",
+            "lastDatapull": "2018/04/25 23:30 UTC",
+            "nextDatapull": "2022/01/12 23:30 UTC"
         },
         "autoSync": true,
         "createdBy": "Bruce Banner"
@@ -23,7 +23,7 @@
         "id": 2,
         "name": "film_actor weekly 2",
         "type": "POSTGRE",
-        "createdAt": "2020/04/25 07:00 UTC",
+        "createdAt": "2020/04/25 23:00 UTC",
         "size" :123,
         "autoSync": false,
         "createdBy": "Matt Murdock",
